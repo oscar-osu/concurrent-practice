@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 import java.util.concurrent.*;
 
 public class ConcurrentExample {
@@ -30,7 +34,12 @@ public class ConcurrentExample {
 
         t1.join();
         t2.join();
-
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(1);
+        Stack<Integer> stack = new Stack<>();
+        stack.contains(7);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.keySet();
         System.out.println("最终 count 的值是: " + count);
     }
 }

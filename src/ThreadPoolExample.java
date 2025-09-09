@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -6,7 +7,8 @@ public class ThreadPoolExample {
     public static void main(String[] args) {
         // 创建一个固定大小为 4 的线程池
         ExecutorService executor = Executors.newFixedThreadPool(4);
-
+        HashMap<Integer, Integer> map = new HashMap<>();
+        
         // 提交 10 个任务给线程池执行
         for (int i = 1; i <= 10; i++) {
             int taskId = i; // 注意：必须是 final 或 effectively final
