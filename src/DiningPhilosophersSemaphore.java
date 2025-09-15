@@ -1,10 +1,10 @@
 import java.util.concurrent.Semaphore;
 
-public class DiningPhilosophers {
+public class DiningPhilosophersSemaphore {
     private Semaphore[] chopsticks = new Semaphore[5];
     private Semaphore maxDiners = new Semaphore(4); // 限制同时吃饭人数为 N-1
 
-    public DiningPhilosophers() {
+    public DiningPhilosophersSemaphore() {
         for (int i = 0; i < 5; i++) {
             chopsticks[i] = new Semaphore(1); // 每根筷子相当于一个信号量
         }
@@ -35,7 +35,7 @@ public class DiningPhilosophers {
     }
 
     public static void main(String[] args) {
-        DiningPhilosophers dp = new DiningPhilosophers();
+        DiningPhilosophersSemaphore dp = new DiningPhilosophersSemaphore();
 
         for (int i = 0; i < 5; i++) {
             int philosopher = i;

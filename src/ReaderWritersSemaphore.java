@@ -1,6 +1,6 @@
 import java.util.concurrent.Semaphore;
 
-public class ReaderWritersProblem {
+public class ReaderWritersSemaphore {
     private int readerCount = 0; // 当前读者数量
     private Semaphore mutex = new Semaphore(1); // 控制 readerCount 的互斥
     private Semaphore writeLock = new Semaphore(1); // 控制写操作
@@ -37,7 +37,7 @@ public class ReaderWritersProblem {
     }
 
     public static void main(String[] args) {
-        ReaderWritersProblem rw = new ReaderWritersProblem();
+        ReaderWritersSemaphore rw = new ReaderWritersSemaphore();
 
         // 启动多个读者线程
         for (int i = 1; i <= 3; i++) {
@@ -72,5 +72,3 @@ public class ReaderWritersProblem {
         }
     }
 }
-
-
