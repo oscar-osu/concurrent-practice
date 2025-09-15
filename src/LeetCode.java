@@ -42,9 +42,9 @@ public class LeetCode {
 
     public static void main(String[] args) throws InterruptedException {
         float[] arr = {0.78f, 0.17f, 0.39f, 0.26f, 0.72f, 0.94f, 0.21f, 0.12f, 0.23f, 0.68f};
-        System.out.println("原数组: " + Arrays.toString(arr));
+        System.out.println("Original Array: " + Arrays.toString(arr));
         bucketSort(arr);
-        System.out.println("桶排序后: " + Arrays.toString(arr));
+        System.out.println("After bucket sort: " + Arrays.toString(arr));
         System.out.println(9796);
     }
 }

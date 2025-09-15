@@ -33,9 +33,7 @@ public class DiningPhilosophers {
         chopsticks[right].release();
         maxDiners.release();
     }
-}
 
-class Main {
     public static void main(String[] args) {
         DiningPhilosophers dp = new DiningPhilosophers();
 
