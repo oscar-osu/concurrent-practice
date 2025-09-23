@@ -38,7 +38,6 @@ public class ReaderWritersSemaphore {
 
     public static void main(String[] args) {
         ReaderWritersSemaphore rw = new ReaderWritersSemaphore();
-
         // 启动多个读者线程
         for (int i = 1; i <= 3; i++) {
             int readerId = i;
